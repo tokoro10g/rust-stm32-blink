@@ -4,6 +4,8 @@ jobs:
       - image: cimg/rust:1.58.0
     steps:
       - checkout
+      - run: sudo apt-get update
+      - run: sudo apt-get -y install libclang-dev
       - run:
           command: rustup target add thumbv7em-none-eabihf
           name: Install target

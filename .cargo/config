@@ -1,5 +1,5 @@
 [target.thumbv7em-none-eabihf]
-runner = 'probe-run --chip STM32F401RETx'
+runner = 'probe-run --chip STM32G474RETx'
 rustflags = [
   "-C", "link-arg=-Tlink.x",
 ]
